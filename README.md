@@ -1,5 +1,14 @@
 # K4 Track 3B — Production Eval + Guardrail Stack
 
+**Trạng thái bài solo:** Lê Nguyễn Quốc Bảo — 2A202603011 đã hoàn thiện Tasks 1–13,
+chạy setup và A/B/C live với LLM mặc định `gpt-4o-mini`. Bộ nộp giữ bốn artifacts
+chuẩn và ba báo cáo theo template; các file hỗ trợ ngoài danh sách nộp đã dọn.
+RAG avg=0.434770; judge κ=1.0; guard 20/20 attacks, 8/8 clean, 4/4 outputs;
+input P95=923.559508 ms, vượt mục tiêu 500 ms. Chất lượng RAG chưa đạt gates CI đề xuất.
+Kiểm tra bộ nộp: **86 tests passed, 3 integration deselected, 0 failed checks**.
+50 answers LLM/0 fallback, 27 abstentions. Xem [TEAM](doc/TEAM.md) và
+[các báo cáo](doc/reports/blueprint.md). Hướng dẫn starter bên dưới được giữ làm tài liệu đề bài.
+
 **Bài nhóm: mỗi nhóm dùng và nộp một repo chung của trưởng nhóm.**
 Mỗi người khai phần thực tế đã làm trong [doc/TEAM.md](doc/TEAM.md).
 
@@ -63,6 +72,12 @@ Môi trường mục tiêu là **Python 3.11**. Dùng `requirements/requirements
 unit tests offline và `requirements/requirements.txt` cùng `requirements/constraints-core.txt` cho full
 runtime. NeMo/Annoy cần compiler C++ trên Windows. Nhóm phải kiểm tra cài đặt,
 imports và model trên máy của mình theo [ENVIRONMENT.md](doc/ENVIRONMENT.md).
+
+Runtime đã kiểm chứng dùng PyArrow 17.0.0 để tương thích NumPy 1.26.4, pin trực tiếp
+trong `requirements/requirements.txt`; giữ toàn bộ pins lõi của starter. Lệnh tái lập:
+`uv pip install -r requirements/requirements.txt -c requirements/constraints-core.txt`.
+Retrieval CPU thực dùng BGE-M3 ONNX INT8 và FlashRank multilingual; model/revision,
+truncation và điều kiện thực nghiệm được ghi trong [báo cáo Phase A](doc/reports/failure_clusters.md).
 
 1. Làm theo [ENVIRONMENT.md](doc/ENVIRONMENT.md), chuẩn bị compiler, Docker và
    dependencies trước buổi học. Windows có thể chạy trực tiếp Python trong
