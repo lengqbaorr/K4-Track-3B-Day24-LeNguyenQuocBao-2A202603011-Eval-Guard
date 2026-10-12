@@ -1,7 +1,7 @@
 # Bài thực hiện solo K4 Track 3B
 
 Người thực hiện: **Lê Nguyễn Quốc Bảo — 2A202603011**. Hình thức solo theo yêu cầu người thực hiện; coach chấp nhận hình thức này chưa được xác nhận trong phiên làm việc.
-Repo bài làm: [K4-Track-3B-Day24-LeNguyenQuocBao-2A202603011-Eval-Guard](https://github.com/lengqbaorr/K4-Track-3B-Day24-LeNguyenQuocBao-2A202603011-Eval-Guard). Branch nộp: `main`; tên repo đang dùng theo remote người thực hiện, khác mẫu tên nhóm trong SUBMISSION. Phiên bản kỹ thuật sẽ được chốt bằng commit sau kiểm tra cuối.
+Repo bài làm: [K4-Track-3B-Day24-LeNguyenQuocBao-2A202603011-Eval-Guard](https://github.com/lengqbaorr/K4-Track-3B-Day24-LeNguyenQuocBao-2A202603011-Eval-Guard). Branch nộp: `main`; tên repo đang dùng theo remote người thực hiện, khác mẫu tên nhóm trong SUBMISSION. Commit kỹ thuật đã chốt sau kiểm tra cuối: `12b24737c7db06fbe9023e91a403ab308019231b`.
 Ngày lab và deadline cần đối chiếu thông báo coach: README ghi 11:59 AM ngày 13/10/2026, còn ASSIGNMENT/RULES/SUBMISSION ghi 23:59 ngày lab, UTC+07:00. Không suy ra ngày lab từ thời gian máy.
 
 ## Thành viên và phân công
@@ -45,4 +45,6 @@ Bộ nộp giữ đúng bốn artifacts và ba báo cáo theo SUBMISSION. File u
 
 ## Nộp bài và cập nhật
 
-Bộ nộp local đã chuẩn bị để commit/push lên origin/main theo yêu cầu người thực hiện. Gửi link/SHA qua kênh coach là bước riêng, chưa thực hiện trong phiên này; deadline vẫn cần thông báo coach. Phiên bản commit được cập nhật sau khi chốt kỹ thuật.
+Commit kỹ thuật: `12b24737c7db06fbe9023e91a403ab308019231b` — chứa source, bốn artifacts, ba báo cáo và kết quả kiểm chứng khai trong TEAM.
+Bản bàn giao cuối gồm commit kỹ thuật này và commit cập nhật TEAM ngay sau đó; SHA cuối cùng được đối chiếu với `origin/main` và cung cấp trong thông báo bàn giao. Thời điểm chốt kỹ thuật UTC: `2026-10-12T15:14:14.153126+00:00`.
+Repo đích: https://github.com/lengqbaorr/K4-Track-3B-Day24-LeNguyenQuocBao-2A202603011-Eval-Guard, branch `main`. Push GitHub theo yêu cầu người thực hiện; gửi link/SHA qua kênh coach là bước riêng, chưa thực hiện trong phiên này. Deadline vẫn cần thông báo coach.
